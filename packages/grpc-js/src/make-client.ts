@@ -182,7 +182,8 @@ export interface GrpcObject {
   [index: string]:
     | GrpcObject
     | ServiceClientConstructor
-    | ProtobufTypeDefinition;
+    | ProtobufTypeDefinition
+    | any;
 }
 
 function isProtobufTypeDefinition(
